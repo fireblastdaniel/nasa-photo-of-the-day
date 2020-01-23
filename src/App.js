@@ -1,13 +1,28 @@
-import React from "react";
+import React, {useState} from "react";
+import Header from './components/Header/Header';
+import MainCard from './components/MainCard/MainCard';
 import "./App.css";
 
 function App() {
+  const [aponDate, setAponDate] = useState('');
+
+  const selectNewDate = () => {
+    const dateInput = document.querySelector('.aponDate').value;
+    setAponDate(`&date=${dateInput}`);
+  };
+
   return (
     <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
+      <div className='header-container'>
+        <Header selectNewDate={selectNewDate}/>
+      </div>
+      <div className='main-container' >
+        <h1>Astronomy Photo of the Day</h1>
+        <h2>by NASA</h2>
+        {/* <FullScreenCard/> */}
+        <MainCard date={aponDate} />
+        {/* <OtherCardsList/> */}
+      </div>
     </div>
   );
 }
