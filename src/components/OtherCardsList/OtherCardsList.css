@@ -1,0 +1,75 @@
+.scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 2% 5%;
+    display:flex;
+    vertical-align:middle;
+  }
+
+  .card-body{
+    background-color: #F6E7E6;
+  }
+
+  .card{
+    border-radius:12px;
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+    transition: all .2s ease-in-out;
+  }
+
+  .card:hover{
+    transform: scale(1.1);
+  }
+
+  .cards {
+    display: inline-block;
+    width: 25%;
+    margin: 0 1%;
+  }
+
+  .card-title{
+    width: 100%;
+  }
+
+  .card-body{
+    width: 100%;
+  }
+
+  .recHeader{
+    text-align:left;
+    margin-left: 5%;
+  }
+
+  hr{
+    margin: 5%;
+  }
+
+.scroll-left{
+  width:10%;
+  margin-left:10%;
+  font-size: 500%;
+}
+
+.scroll-right{
+  width:10%;
+  margin-left:60%;
+  font-size:500%;
+}
+
+.scroll-left, .scroll-right{
+  transition: all .2s ease-in-out;
+}
+
+.scroll-left:hover, .scroll-right:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.scroll-btns{
+  display:flex;
+}
+
+.bottom h2{
+  margin-top: 2%;
+  width:100%;
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from 'reactstrap';
 import './Header.css';
 
 const Header = props => {
@@ -7,7 +8,7 @@ const Header = props => {
         <>
         <span>See APON for: </span>
         <input type='date' className='aponDate'></input>
-        <button className='date-btn' onClick={props.selectNewDate}>Submit</button>
+        <Button color='primary' onClick={props.selectNewDate}>Submit</Button>{' '}
         </>
     );
 }
